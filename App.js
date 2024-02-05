@@ -12,28 +12,28 @@ const Stack = createStackNavigator();
 export default function App() {
 
   return (
-      <View style={{ flex: 1, backgroundColor: '#222' }}>
-        <SafeAreaView style={{ flex: 1 }}>
-          <NavigationContainer>
-            <Stack.Navigator
-              initialRouteName='Home' // Set the initial route to Home
-            >
-              <Stack.Screen name="Home" component={Home}
-                options={{ headerShown: false }} />
-              <Stack.Screen
-                name="Story"
-                component={Story}
-                options={{
-                  headerStyle: {
-                    backgroundColor: '#222', // Set the background color
-                  },
-                  headerTintColor: '#fff', // Set the text color
-                }}
-              />
-            </Stack.Navigator>
-          </NavigationContainer>
-        </SafeAreaView>
+    <View style={{ flex: 1, backgroundColor: '#222' }}>
+      <SafeAreaView style={{ flex: 1 }}>
+        <NavigationContainer>
+          <Stack.Navigator
+            initialRouteName='Home' // Set the initial route to Home
+          >
+            <Stack.Screen name="Home" component={Home}
+              options={{ headerShown: false }} />
+            <Stack.Screen
+              name="Story"
+              component={Story}
+              options={{
+                headerStyle: {
+                  backgroundColor: '#222', // Set the background color
+                },
+                headerTintColor: '#fff', // Set the text color
+              }}
+            />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </SafeAreaView>
       <StatusBar />
-      </View>
+    </View>
   );
 }
